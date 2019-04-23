@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Metas
+        ================================================== -->
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width"/>
+
+        <!-- Page Title
+        ================================================== -->
+        <title>Find Sponsors</title>
+
+        <!-- Google fonts
+        ================================================== -->
+
+        <!-- jquery
+        ================================================== -->
+        <script type="text/javascript" src="resources/framework/jquery/js/jquery.js"></script>
+
+        <!-- bootstrap
+        ================================================== -->
+        <link rel="stylesheet" href="resources/framework/bootstrap/css/bootstrap.min.css">
+        <script type="text/javascript" src="resources/framework/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- font-awesome
+        ================================================== -->
+        <link rel="stylesheet" href="resources/framework/font-awesome/css/font-awesome.css">
+
+        <!-- CSS Custom
+        ================================================== -->
+        <link rel="stylesheet" href="resources/css/main.css">
+
+        <!-- JavaScript Custom
+        ================================================== -->
+        <script type="text/javascript" src="resources/js/main.js"></script>
+
+        <!-- Favicons
+        ================================================== -->
+        <link rel="shortcut icon" href="resources/img/favicon.ico">
+
+    </head>
+
+    <body class="page-home">
+
+        <!-- Navigation Bar -->
+        <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+        <nav id="side-wrapper">
+            <div class="sidebar-container">
+                <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle" onclick = $("#menu-close").click(); ><i class="fa fa-times"></i></a>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#top" onclick=$("#menu-close").click(); >Esponso</a>
+                    </li>
+                    <li>
+                        <a role="button" class="signup-open" data-toggle="modal" href="#signup" onclick= $("#menu-close").click(); >Sign up</a>
+                    </li>
+                    <li>
+                        <a role="button" class="signin-open" data-toggle="modal" href="#signin" onclick= $("#menu-close").click(); >Sign in</a>
+                    </li>
+                    <li>
+                        <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" onclick = $("#menu-close").click(); >Events</a>
+                    </li>
+                    <li>
+                        <a href="#about" onclick = $("#menu-close").click(); >Companies</a>
+                    </li>
+                    <li>
+                        <a href="#services" onclick = $("#menu-close").click(); >About</a>
+                    </li>
+                    <li>
+                        <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End of Navigation Bar -->
+
+        <!-- Sign-Up -->
+        <div class="modal fade" id="signup">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close signup-close" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title">Sign up</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-12 lp30 rp30">
+                                <form class="forms" method="post" action="">
+                                    <div class="form-group">
+                                        <input type="name" class="form-control" id="contact-name" placeholder="Name (Required)">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="contact-email" placeholder="Email (Required)">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="subject" class="form-control" id="contact-subject" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="subject" class="form-control" id="contact-subject" placeholder="Phone Number">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-xs-12 text-center">
+                                <h3 class="">or</h3>
+                            </div>
+                            <div class="col-xs-12 text-center">
+                                <ul class="openid">
+                                    <li>
+                                        <a target="_blank" rel="me nofollow" href="#"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" rel="me nofollow" href="#"><i class="fa fa-google-plus"></i></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" rel="me nofollow" href="#"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="checkbox tm10 pull-left">
+                            <label>
+                                <input type="checkbox">I accept the <a target="_blank" href="/terms">terms &amp; conditions</a>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-lg signup-close" data-dismiss="modal" type="button">Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Sign-Up -->
+
+        <!-- Sign-In -->
+        <div class="modal fade" id="signin">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close signin-close" data-dismiss="modal" id="signin-close">&times;</button>
+                        <h2 class="modal-title">Sign in</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-12 lp30 rp30">
+                                <form class="forms" method="post" action="">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="contact-email" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="subject" class="form-control" id="contact-subject" placeholder="Password">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-xs-12 text-center">
+                                <h3 class="">or</h3>
+                            </div>
+                            <div class="col-xs-12 text-center">
+                                <ul class="openid">
+                                    <li>
+                                        <a target="_blank" rel="me nofollow" href="#"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" rel="me nofollow" href="#"><i class="fa fa-google-plus"></i></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" rel="me nofollow" href="#"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="tm10 pull-left">
+                            <h6>Don't have an account? <a role="button" type="button" id="modal-switch">Create One</a></h6>
+                        </div>
+                        <button class="btn btn-primary btn-lg signin-close" data-dismiss="modal" type="button">Sign in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Sign-Up -->
+
+        <!-- Scroll-down Button -->
+        <div class="wrapper-bottom">
+            <a id="scroll-down" href="" class="btn btn-circle page-scroll"><i class="fa fa-angle-double-down"></i></a>
+        </div>
+        <!-- End of Scroll-down Button -->
+
+        <!-- Header -->
+        <header id="top" class="header">
+            <div class="text-vertical-center text-header">
+                <hgroup>
+                    <h1>What are you planning tonignt?</h1>
+                    <h3>Free Bootstrap Themes &amp; Templates</h3>
+                </hgroup>
+                <br>
+                <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+            </div>
+        </header>
+        <!-- End of Header -->
+
+        <!-- Event of the Month -->
+        <section id="event-of-the-month" class="">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <h2 class="section-heading">Event of the Month</h2>
+                        <hr class="small">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="service-item">
+                                    <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                    </span>
+                                    <h4>
+                                        <strong>Service Name</strong>
+                                    </h4>
+                                    <p>Lorem ipsum 1.</p>
+                                    <a href="#" class="btn btn-light">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="service-item">
+                                    <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                                    </span>
+                                    <h4>
+                                        <strong>Service Name</strong>
+                                    </h4>
+                                    <p>Lorem ipsum 2.</p>
+                                    <a href="#" class="btn btn-light">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Event of the Month -->
+
+        <!-- Upcoming Events -->
+        <section id="upcoming-events" class="">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h2 class="section-heading">Upcoming Events</h2>
+                        <hr class="small-black">
+                        <div class="divide50"></div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-3">
+                                <div class="thumbnail" id="upcoming-events-thumbnail">
+                                    <div class="hover-container">
+                                        <div class="hover-mask" id="upcoming-events-mask">
+                                            <p><a href="#" class="btn btn-primary" id="mask-button" role="button"><i class="fa fa-heart fa-2x"></i></a></p>
+                                            <p id="mask-caption">View Details</p>
+                                        </div>
+                                        <a href="#">
+                                            <img class="img-responsive" src="resources/img/event-1.jpg">
+                                        </a>
+                                    </div>
+                                    <h4 class="thumbnail-caption">Event Bravo</h4>
+                                    <p class="thumbnail-caption lead">Conference</p>
+                                    <p class="thumbnail-caption">About the event. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla libero molestiae voluptates veritatis veniam
+                                    possimus consequatur tenetur hic mollitia architecto eum autem fugiat enim, nam quos inventore repellendus eveniet saepe, a distinctio dolor placeat fuga
+                                    quam iusto! Modi eius veritatis, non voluptas. Unde debitis vitae itaque consequuntur nulla officia, sed!</p>
+                                    <p><span><a><i class="fa fa-map-marker fa-2x"></i></a>&nbsp;&nbsp;&nbsp;<a><i class="fa fa-users fa-2x"></i></a>&nbsp;&nbsp;&nbsp;<a><i class="fa fa-calendar fa-2x"></i></a></span></p>
+                                    <hr>
+                                    <p class="lp20 rp20 bp10"><a href="#" class="btn btn-primary btn-block btn-lg">View</a></p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3">
+                                <div class="thumbnail" id="upcoming-events-thumbnail">
+                                    <div class="hover-container">
+                                        <div class="hover-mask" id="upcoming-events-mask">
+                                            <p><a href="#" class="btn btn-primary" id="mask-button" role="button"><i class="fa fa-heart fa-2x"></i></a></p>
+                                            <p id="mask-caption">View Details</p>
+                                        </div>
+                                        <a href="#">
+                                            <img class="img-responsive" src="resources/img/event-1.jpg">
+                                        </a>
+                                    </div>
+                                    <h4 class="thumbnail-caption">Event Bravo</h4>
+                                    <p class="thumbnail-caption lead">Conference</p>
+                                    <p class="thumbnail-caption">About the event. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero repellendus aut modi obcaecati rem necessitatibus
+                                    quidem neque, quibusdam amet libero alias, veritatis illum similique accusantium possimus qui, dolorum esse odio consequuntur? Incidunt nostrum dicta at qui
+                                    doloribus consequuntur reprehenderit suscipit, in, tenetur aperiam eveniet, voluptate repellat nobis hic consequatur et!</p>
+                                    <p><span><a><i class="fa fa-map-marker fa-2x"></i></a>&nbsp;&nbsp;&nbsp;<a><i class="fa fa-users fa-2x"></i></a>&nbsp;&nbsp;&nbsp;<a><i class="fa fa-calendar fa-2x"></i></a></span></p>
+                                    <hr>
+                                    <p class="lp20 rp20 bp10"><a href="#" class="btn btn-primary btn-block btn-lg">View</a></p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3">
+                                <div class="thumbnail" id="upcoming-events-thumbnail">
+                                    <div class="hover-container">
+                                        <div class="hover-mask" id="upcoming-events-mask">
+                                            <p><a href="#" class="btn btn-primary" id="mask-button" role="button"><i class="fa fa-heart fa-2x"></i></a></p>
+                                            <p id="mask-caption">View Details</p>
+                                        </div>
+                                        <a href="#">
+                                            <img class="img-responsive" src="resources/img/event-1.jpg">
+                                        </a>
+                                    </div>
+                                    <h4 class="thumbnail-caption">Event Bravo</h4>
+                                    <p class="thumbnail-caption lead">Conference</p>
+                                    <p class="thumbnail-caption">About the event. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A neque hic sapiente, iste tempore modi eveniet accusamus
+                                    minima consequuntur suscipit aperiam placeat enim doloremque blanditiis quasi quidem. Placeat assumenda recusandae quae, magnam aliquid. Sed minus a quis et, amet
+                                    itaque. Laboriosam dolore rerum, cum sapiente. Ut blanditiis numquam, quae modi!</p>
+                                    <p><span><a><i class="fa fa-map-marker fa-2x"></i></a>&nbsp;&nbsp;&nbsp;<a><i class="fa fa-users fa-2x"></i></a>&nbsp;&nbsp;&nbsp;<a><i class="fa fa-calendar fa-2x"></i></a></span></p>
+                                    <hr>
+                                    <p class="lp20 rp20 bp10"><a href="#" class="btn btn-primary btn-block btn-lg">View</a></p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3">
+                                <div class="thumbnail" id="upcoming-events-thumbnail">
+                                    <div class="hover-container">
+                                        <div class="hover-mask" id="upcoming-events-mask">
+                                            <p><a href="#" class="btn btn-primary" id="mask-button" role="button"><i class="fa fa-heart fa-2x"></i></a></p>
+                                            <p id="mask-caption">View Details</p>
+                                        </div>
+                                        <a href="#">
+                                            <img class="img-responsive" src="resources/img/event-1.jpg">
+                                        </a>
+                                    </div>
+                                    <h4 class="thumbnail-caption">Event Bravo</h4>
+                                    <p class="thumbnail-caption lead">Conference</p>
+                                    <p class="thumbnail-caption">About the event. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sapiente nobis dolorum cumque. Numquam, consectetur
+                                    facilis. Veniam, repellendus dignissimos recusandae, necessitatibus atque incidunt aliquam veritatis deserunt a ullam tempora, autem saepe iure, provident tempore
+                                    voluptatem explicabo? At facilis, eligendi natus accusamus aperiam, molestias optio ad velit debitis, quibusdam reiciendis cumque.</p>
+                                    <p><span><a><i class="fa fa-map-marker fa-2x"></i></a>&nbsp;&nbsp;&nbsp;<a><i class="fa fa-users fa-2x"></i></a>&nbsp;&nbsp;&nbsp;<a><i class="fa fa-calendar fa-2x"></i></a></span></p>
+                                    <hr>
+                                    <p class="lp20 rp20 bp10"><a href="#" class="btn btn-primary btn-block btn-lg">View</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <a href="#" class="btn btn-default btn-lg">View All Events</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Upcoming Events -->
+
+        <!-- Top Sponsors -->
+        <section id="top-sponsors">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h2 class="section-heading">Top Sponsors</h2>
+                        <hr class="small">
+
+                        <!-- Row-1 -->
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-4 col-lg-3">
+                                <div class="hover-container col-container">
+                                    <div class="hover-mask center-block" id="top-sponsors-mask">
+                                        <p id="mask-caption"><i class="fa fa-share-square-o fa-responsive"></i></p>
+                                    </div>
+                                    <a href="#">
+                                        <img class="img-responsive img-circle" src="resources/img/fender_logo.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-lg-3">
+                                <div class="hover-container col-container">
+                                    <div class="hover-mask center-block" id="top-sponsors-mask">
+                                        <p id="mask-caption"><i class="fa fa-share-square-o fa-responsive"></i></p>
+                                    </div>
+                                    <a href="#">
+                                        <img class="img-responsive img-circle" src="resources/img/fender_logo.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-lg-3">
+                                <div class="hover-container col-container">
+                                    <div class="hover-mask center-block" id="top-sponsors-mask">
+                                        <p id="mask-caption"><i class="fa fa-share-square-o fa-responsive"></i></p>
+                                    </div>
+                                    <a href="#">
+                                        <img class="img-responsive img-circle" src="resources/img/fender_logo.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-lg-3">
+                                <div class="hover-container col-container">
+                                    <div class="hover-mask center-block" id="top-sponsors-mask">
+                                        <p id="mask-caption"><i class="fa fa-share-square-o fa-responsive"></i></p>
+                                    </div>
+                                    <a href="#">
+                                        <img class="img-responsive img-circle" src="resources/img/fender_logo.png">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-4 col-lg-3">
+                                <div class="hover-container col-container">
+                                    <div class="hover-mask center-block" id="top-sponsors-mask">
+                                        <p id="mask-caption"><i class="fa fa-share-square-o fa-responsive"></i></p>
+                                    </div>
+                                    <a href="#">
+                                        <img class="img-responsive img-circle" src="resources/img/fender_logo.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-lg-3">
+                                <div class="hover-container col-container">
+                                    <div class="hover-mask center-block" id="top-sponsors-mask">
+                                        <p id="mask-caption"><i class="fa fa-share-square-o fa-responsive"></i></p>
+                                    </div>
+                                    <a href="#">
+                                        <img class="img-responsive img-circle" src="resources/img/fender_logo.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-lg-3">
+                                <div class="hover-container col-container">
+                                    <div class="hover-mask center-block" id="top-sponsors-mask">
+                                        <p id="mask-caption"><i class="fa fa-share-square-o fa-responsive"></i></p>
+                                    </div>
+                                    <a href="#">
+                                        <img class="img-responsive img-circle" src="resources/img/fender_logo.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-lg-3">
+                                <div class="hover-container col-container">
+                                    <div class="hover-mask center-block" id="top-sponsors-mask">
+                                        <p id="mask-caption"><i class="fa fa-share-square-o fa-responsive"></i></p>
+                                    </div>
+                                    <a href="#">
+                                        <img class="img-responsive img-circle" src="resources/img/fender_logo.png">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-4 col-lg-3">
+                                <div class="hover-container col-container">
+                                    <div class="hover-mask center-block" id="top-sponsors-mask">
+                                        <p id="mask-caption"><i class="fa fa-share-square-o fa-responsive"></i></p>
+                                    </div>
+                                    <a href="#">
+                                        <img class="img-responsive img-circle" src="resources/img/fender_logo.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-lg-3">
+                                <div class="hover-container col-container">
+                                    <div class="hover-mask center-block" id="top-sponsors-mask">
+                                        <p id="mask-caption"><i class="fa fa-share-square-o fa-responsive"></i></p>
+                                    </div>
+                                    <a href="#">
+                                        <img class="img-responsive img-circle" src="resources/img/fender_logo.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-lg-3">
+                                <div class="hover-container col-container">
+                                    <div class="hover-mask center-block" id="top-sponsors-mask">
+                                        <p id="mask-caption"><i class="fa fa-share-square-o fa-responsive"></i></p>
+                                    </div>
+                                    <a href="#">
+                                        <img class="img-responsive img-circle" src="resources/img/fender_logo.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-lg-3">
+                                <div class="hover-container col-container">
+                                    <div class="hover-mask center-block" id="top-sponsors-mask">
+                                        <p id="mask-caption"><i class="fa fa-share-square-o fa-responsive"></i></p>
+                                    </div>
+                                    <a href="#">
+                                        <img class="img-responsive img-circle" src="resources/img/fender_logo.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Row-1 -->
+
+                        <a href="#" class="btn btn-dark btn-default btn-lg">View All Sponsors</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Top Sponsors -->
+
+        <!-- Subscribe Us -->
+        <section class="jumbotron subscribe-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h2>Want to hear back from us?</h2>
+                        <h4>Subscribe to receive updates</h4>
+                        <form class="form-inline">
+                            <div class="input-group input-group-lg" id="subscribe-form">
+                                <input type="email" class="form-control" id="subscription-email" placeholder="Email address..." name="EMAIL">
+                                <span class="input-group-btn">
+                                    <button id="subscription-button" class="btn btn-default" name="subscribe" type="submit">Subscribe!</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Subscribe Us -->
+
+       <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                       <h4>COME JOIN US</h4>
+                        <h6>Join us on social media! Be in touch.</h6>
+                        <div class="divide10"></div>
+                        <ul class="social">
+                            <li>
+                                <a target="_blank" rel="me nofollow" href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="me nofollow" href="#"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="me nofollow" href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="me nofollow" href="#"><i class="fa fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="me nofollow" href="#"><i class="fa fa-vimeo-square"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="me nofollow" href="#"><i class="fa fa-share-alt"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>ABOUT US</h4>
+                        <h6>We are a small company, trying to connect event organizers with sponsors. So that organizing an event becomes swift as never before. Learn more about us <a href="/about">here</a></h6>
+                    </div>
+                    <div class="col-sm-2">
+                        <h4>NAVIGATION</h4>
+                        <ul class="unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Abount Us</a></li>
+                            <li><a href="#">Terms &amp; Services</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4>PING US</h4>
+                        <h6>If you have a question, feel free to ask!</h6>
+                        <h6><p><i class="fa fa-envelope"></i>&nbsp; &nbsp;<a href="/contact">Contact Us</a></p></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-footer">
+                <div class="container">
+                    <p class="pull-left">Copyright &copy; 2015 Esponso.com. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+    </body>
+</html>
