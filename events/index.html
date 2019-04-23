@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Metas
+        ================================================== -->
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width"/>
+
+        <!-- Page Title
+        ================================================== -->
+        <title>Find Sponsors</title>
+
+        <!-- Google fonts
+        ================================================== -->
+
+        <!-- jquery
+        ================================================== -->
+        <script type="text/javascript" src="../resources/framework/jquery/js/jquery.js"></script>
+
+        <!-- bootstrap
+        ================================================== -->
+        <link rel="stylesheet" href="../resources/framework/bootstrap/css/bootstrap.min.css">
+        <script type="text/javascript" src="../resources/framework/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- font-awesome
+        ================================================== -->
+        <link rel="stylesheet" href="../resources/framework/font-awesome/css/font-awesome.css">
+
+        <!-- CSS Custom
+        ================================================== -->
+        <link rel="stylesheet" href="../resources/css/main.css">
+
+        <!-- JavaScript Custom
+        ================================================== -->
+        <script type="text/javascript" src="../resources/js/main.js"></script>
+
+        <!-- Favicons
+        ================================================== -->
+        <link rel="shortcut icon" href="../resources/img/favicon.ico">
+
+    </head>
+
+    <body class="page-events">
+
+        <!-- Navigation Bar -->
+        <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+        <nav id="side-wrapper">
+            <div class="sidebar-container">
+                <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle" onclick = $("#menu-close").click(); ><i class="fa fa-times"></i></a>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#top" onclick=$("#menu-close").click(); >Esponso</a>
+                    </li>
+                    <li>
+                        <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" onclick = $("#menu-close").click(); >Events</a>
+                    </li>
+                    <li>
+                        <a href="#about" onclick = $("#menu-close").click(); >Companies</a>
+                    </li>
+                    <li>
+                        <a href="#services" onclick = $("#menu-close").click(); >About</a>
+                    </li>
+                    <li>
+                        <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End of Navigation Bar -->
+
+        <!-- Header -->
+        <header id="top" class="header">
+            <div class="text-vertical-center text-header">
+            </div>
+        </header>
+        <!-- End of Header -->
+
+        <!-- Main Section -->
+        <section id="main-section">
+            <div class="container" id="contents">
+                <div class="row content-area clearfix">
+                    <div class="col-xs-12 col-sm-3 sidebar hidden-print">
+                        <div class="catalog-menu">
+                            <ul class="nav nav-stacked">
+                                <ul class="nav nav-stacked category-nav">
+                                    <li class="active">
+                                        <h2><a href="#">Category-1</a></h2>
+                                        <ul class="level-2">
+                                            <li><a href="#">item</a></li>
+                                            <li><a href="#">item</a></li>
+                                            <li><a href="#">item</a></li>
+                                            <li><a href="#">item</a></li>
+                                            <li><a href="#">item</a></li>
+                                            <li><a href="#">item</a></li>
+                                            <li><a href="#">item</a></li>
+                                        </ul>
+                                    </li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </ul>
+                        </div>
+                        <div class="jumbotron"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-9 content">
+                        <div id="quick-filter2">
+                            <div class="nav-tabs">
+                                <div class="btn-group">
+                                    <button class="btn btn-sort" data-toggle=".sort-options" type="button">Sort Results</button>
+                                    <button class="btn btn-sort" data-toggle=".sort-options" type="button">Sort Results</button>
+                                </div>
+                                <form class="navbar-form pull-right" id="search-form">
+                                    <div class="input-group">
+                                        <input input="text" class="form-control" placeholder="Search...">
+                                        <button type="submit" class="btn btn-default"><i class="fa fa-search fa-1x"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-content"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-11 col-lg-offset-1 text-center" id="events-thumbnails-container">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="thumbnail" id="events-thumbnail">
+                                            <div class="hover-container">
+                                                <div class="hover-mask" id="events-mask">
+                                                    <p id="mask-caption">Hello Caption!</p>
+                                                </div>
+                                                <a href="#">
+                                                    <img class="img-responsive" src="../resources/img/event-1.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="caption">
+                                                <h4 class="thumbnail-caption">Thumbnail</h4>
+                                                <p class="thumbnail-caption">This is what the thumbnail says about our code.</p>
+                                                <p><a href="#" class="btn btn-default" role="button">Preview</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="thumbnail" id="events-thumbnail">
+                                            <div class="hover-container">
+                                                <div class="hover-mask" id="events-mask">
+                                                    <p id="mask-caption">Hello Caption!</p>
+                                                </div>
+                                                <a href="#">
+                                                    <img class="img-responsive" src="../resources/img/event-1.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="caption">
+                                                <h4 class="thumbnail-caption">Thumbnail</h4>
+                                                <p class="thumbnail-caption">This is what the thumbnail says about our code.</p>
+                                                <p><a href="#" class="btn btn-default" role="button">Preview</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="thumbnail" id="events-thumbnail">
+                                            <div class="hover-container">
+                                                <div class="hover-mask" id="events-mask">
+                                                    <p id="mask-caption">Hello Caption!</p>
+                                                </div>
+                                                <a href="#">
+                                                    <img class="img-responsive" src="../resources/img/event-1.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="caption">
+                                                <h4 class="thumbnail-caption">Thumbnail</h4>
+                                                <p class="thumbnail-caption">This is what the thumbnail says about our code.</p>
+                                                <p><a href="#" class="btn btn-default" role="button">Preview</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="thumbnail" id="events-thumbnail">
+                                            <div class="hover-container">
+                                                <div class="hover-mask" id="events-mask">
+                                                    <p id="mask-caption">Hello Caption!</p>
+                                                </div>
+                                                <a href="#">
+                                                    <img class="img-responsive" src="../resources/img/event-1.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="caption">
+                                                <h4 class="thumbnail-caption">Thumbnail</h4>
+                                                <p class="thumbnail-caption">This is what the thumbnail says about our code.</p>
+                                                <p><a href="#" class="btn btn-default" role="button">Preview</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="thumbnail" id="events-thumbnail">
+                                            <div class="hover-container">
+                                                <div class="hover-mask" id="events-mask">
+                                                    <p id="mask-caption">Hello Caption!</p>
+                                                </div>
+                                                <a href="#">
+                                                    <img class="img-responsive" src="../resources/img/event-1.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="caption">
+                                                <h4 class="thumbnail-caption">Thumbnail</h4>
+                                                <p class="thumbnail-caption">This is what the thumbnail says about our code.</p>
+                                                <p><a href="#" class="btn btn-default" role="button">Preview</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="thumbnail" id="events-thumbnail">
+                                            <div class="hover-container">
+                                                <div class="hover-mask" id="events-mask">
+                                                    <p id="mask-caption">Hello Caption!</p>
+                                                </div>
+                                                <a href="#">
+                                                    <img class="img-responsive" src="../resources/img/event-1.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="caption">
+                                                <h4 class="thumbnail-caption">Thumbnail</h4>
+                                                <p class="thumbnail-caption">This is what the thumbnail says about our code.</p>
+                                                <p><a href="#" class="btn btn-default" role="button">Preview</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="thumbnail" id="events-thumbnail">
+                                            <div class="hover-container">
+                                                <div class="hover-mask" id="events-mask">
+                                                    <p id="mask-caption">Hello Caption!</p>
+                                                </div>
+                                                <a href="#">
+                                                    <img class="img-responsive" src="../resources/img/event-1.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="caption">
+                                                <h4 class="thumbnail-caption">Thumbnail</h4>
+                                                <p class="thumbnail-caption">This is what the thumbnail says about our code.</p>
+                                                <p><a href="#" class="btn btn-default" role="button">Preview</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="thumbnail" id="events-thumbnail">
+                                            <div class="hover-container">
+                                                <div class="hover-mask" id="events-mask">
+                                                    <p id="mask-caption">Hello Caption!</p>
+                                                </div>
+                                                <a href="#">
+                                                    <img class="img-responsive" src="../resources/img/event-1.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="caption">
+                                                <h4 class="thumbnail-caption">Thumbnail</h4>
+                                                <p class="thumbnail-caption">This is what the thumbnail says about our code.</p>
+                                                <p><a href="#" class="btn btn-default" role="button">Preview</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="thumbnail" id="events-thumbnail">
+                                            <div class="hover-container">
+                                                <div class="hover-mask" id="events-mask">
+                                                    <p id="mask-caption">Hello Caption!</p>
+                                                </div>
+                                                <a href="#">
+                                                    <img class="img-responsive" src="../resources/img/event-1.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="caption">
+                                                <h4 class="thumbnail-caption">Thumbnail</h4>
+                                                <p class="thumbnail-caption">This is what the thumbnail says about our code.</p>
+                                                <p><a href="#" class="btn btn-default" role="button">Preview</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-7"></div>
+                                    <div class="col-sx-12 col-sm-5">
+                                        <nav>
+                                            <ul class="pagination" id="pagination-right">
+                                                <li>
+                                                    <a href="" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+                                                </li>
+                                                <li class="active"><a href="">1<span class="sr-only">(current)</span></a></li>
+                                                <li><a href="">2</a></li>
+                                                <li><a href="">3</a></li>
+                                                <li><a href="">...</a></li>
+                                                <li>
+                                                    <a href="" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Main Section -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h4>COME JOIN US</h4>
+                        <h6>Join us on social media! Be in touch.</h6>
+                        <div class="divide10"></div>
+                        <ul class="social">
+                            <li>
+                                <a target="_blank" rel="me nofollow" href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="me nofollow" href="#"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="me nofollow" href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="me nofollow" href="#"><i class="fa fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="me nofollow" href="#"><i class="fa fa-vimeo-square"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="me nofollow" href="#"><i class="fa fa-share-alt"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>ABOUT US</h4>
+                        <h6>We are a small company, trying to connect event organizers with sponsors. So that organizing an event becomes swift as never before. Learn more about us <a href="/about">here</a></h6>
+                    </div>
+                    <div class="col-sm-2">
+                        <h4>NAVIGATION</h4>
+                        <ul class="unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Abount Us</a></li>
+                            <li><a href="#">Terms &amp; Services</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4>PING US</h4>
+                        <h6>If you have a question, feel free to ask!</h6>
+                        <h6><p><i class="fa fa-envelope"></i>&nbsp; &nbsp;<a href="/contact">Contact Us</a></p></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-footer">
+                <div class="container">
+                    <p class="pull-left">Copyright &copy; 2015 Esponso.com. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+    </body>
+</html>
